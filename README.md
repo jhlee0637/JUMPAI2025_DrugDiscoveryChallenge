@@ -31,6 +31,6 @@ Open to everyone
 
      $R^2=\text{Pearson}(\text{pIC}\_{50}^{\text{true}}, \text{pIC}\_{50}^{\text{pred}})^2$
      - Score = 0.4 x (1 - min(A, 1)) + 0.6 x B
- - Public score: 40% of the total test data sampled in advance
- - Private score: The remaining 60% of the total test data
-※ A difference (shake-up) between the Public and Private scores may occur. The first evaluation round will be decided based on the Private Score results.
+     - Public score: 40% of the total test data sampled in advance
+     - Private score: The remaining 60% of the total test data
+
