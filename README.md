@@ -12,6 +12,4 @@ JUMPAI 2025 신약 개발 챌린지를 위한 ASK1 IC50 예측 프로젝트입�
 - **언어**: Python 3.8+
 - **ML/DL**: scikit-learn, LightGBM, XGBoost, PyTorch
 - **분자 처리**: RDKit, PyTorch Geometric
-- **LLM**: Transformers, ChemBERTa
-- **최적화**: Optuna
 - **협업**: GitHub, Jupyter Notebook
