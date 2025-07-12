@@ -1,36 +1,17 @@
-[한국어](./README_kor.md)
+# JUMPAI 2025 Drug Discovery Challenge
 
----
-### [Jump AI 2025: The 3rd AI Drug Development Competition](https://dacon.io/competitions/official/236530/overview/description)
-2025.07.07 ~ 2025.08.25
-## Overview
-### Topic
-Development of a prediction model for MAP3K5 IC50 activity value
-### Description
-Develop an IC50 value prediction model based on experimental compound information collected from PubChem, ChEMBL, CAS, etc.
+## 프로젝트 개요
+JUMPAI 2025 신약 개발 챌린지를 위한 ASK1 IC50 예측 프로젝트입니다. 팀원들과 함께 다양한 머신러닝 접근법을 체계적으로 검토하고 비교하여 최적의 예측 모델을 개발합니다.
 
-Use the structural information of 127 types of compounds as input values to predict and submit the IC50 values for ASK1 of those compounds.
+## **프로젝트 목표**
+- 분자 구조(SMILES)로부터 ASK1 단백질에 대한 IC50 값 예측
+- 다양한 ML/DL 접근법 비교 분석
+- 팀 협업을 통한 체계적인 모델 개발 과정 문서화
 
-### Hosted / Organized / Managed
-Hosted/Organized: [Korea Pharmaceutical and Bio-Pharma Manufacturers Association](https://www.kpbma.or.kr/eng)
-
-Sponsored by: [Ministry of Health and Welfare](https://www.mohw.go.kr/eng/), [Yuhan](http://eng.yuhan.co.kr/Main/), CAS
-
-Managed by: Dacon
-
-### Eligibility
-Open to everyone
-
-## Rules
-**Leaderboard**
- - Evaluation Metric
-   - A = Normalized RMSE of Inhibition (%), measures prediction accuracy.
-  
-      $\text{Normalized RMSE}=\frac{\text{RMSE}}{\text{max}(y)-\text{min}(y)}$
-   - B = The square of the linear correlation between the predicted value and the actual value based on the converted pIC50 value
-
-     $R^2=\text{Pearson}(\text{pIC}\_{50}^{\text{true}}, \text{pIC}\_{50}^{\text{pred}})^2$
-     - Score = 0.4 x (1 - min(A, 1)) + 0.6 x B
-     - Public score: 40% of the total test data sampled in advance
-     - Private score: The remaining 60% of the total test data
-
+## **기술 스택**
+- **언어**: Python 3.8+
+- **ML/DL**: scikit-learn, LightGBM, XGBoost, PyTorch
+- **분자 처리**: RDKit, PyTorch Geometric
+- **LLM**: Transformers, ChemBERTa
+- **최적화**: Optuna
+- **협업**: GitHub, Jupyter Notebook
