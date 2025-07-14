@@ -1,0 +1,17 @@
+name: jumpai-drug-discovery
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.8
+  - pandas
+  - numpy
+  - scikit-learn
+  - jupyter
+  - notebook
+  - ipykernel
+  - rdkit
+  - pip
+  - pip:
+    - matplotlib
+    - seaborn
